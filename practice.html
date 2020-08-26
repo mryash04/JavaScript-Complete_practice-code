@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h1 id="main">This is a heading</h1>
+    <script>
+        var a="Hello World";
+        a="Wow World";
+        document.write(a);
+        document.write("<br>");
+        document.write(typeof a);
+        document.write("<br>");
+        document.write("<strong>this is a text</strong>");
+//        document.write("<br>");
+
+        var a=2;
+        var b=3;
+        a++;
+        var c=a*b;    
+        document.write("<br>");
+        document.write(c);
+
+        var a=14;
+        var b=15;
+        a%=b;
+        document.write("<br>");
+        console.log(a);
+
+        console.time();
+
+        console.table(["HTML","CSS","JS"]);
+
+        console.error("This is a error");
+
+        console.warn("This is just warning");
+
+        console.timeEnd();
+
+//        console.clear();
+
+        var a=14;
+        var b=15;
+        console.log(a<=b);
+
+        var a=15;
+        if(a>=15){
+            console.log("a is greater");
+        }
+
+        var a=14;
+        if(a>10 || a<2){
+            document.write("This is a perfect text");
+        }else{
+            document.write("This is not a perfect text");
+        }
+
+        document.write("<br>");
+
+        var a=16;
+        if(a<18){
+            document.write("a is lesser");
+        }else if(a<15){
+            document.write("a is greater");
+        }else{
+            document.write("this is invallid input");
+        }
+
+        document.write("<br>");
+
+/*        var per=window.prompt("Enter Your Percentage:");
+        if(per>=80 && per<=100){
+            window.alert("Good");
+        }else if(per>=60 && per<80){
+            window.alert("not too good")
+        }else if(per>=40 && per<80){
+            window.alert("worst");
+        }else if(per>=33){
+            window.alert("fail");
+        }else{
+            window.alert("invallid input");
+        }                                                       */                                                                                                                                                                                              
+
+        var a=14;
+        var b;
+        a>15 ? b="true" : b="false"
+        console.log(b);
+
+        document.write("<br>");
+
+        var day=0;
+        switch(day){
+            case 0:
+            document.write("monday");
+            break;
+
+            case 1:
+            document.write("tuesday");
+            break;
+
+            case 2:
+            document.write("wednesday");
+            break;
+
+            case 3:
+            document.write("thursday");
+            break;
+
+            case 4:
+            document.write("friday");
+            break;
+
+            case 5:
+            document.write("sataurday");
+            break;
+
+            case 6:
+            document.write("sunday");
+            break;
+
+            default:
+            document.write("invallid input");
+        }
+
+        var a=15;
+        if(a>16){
+            confirm("true");
+        }else if(a<16){
+            confirm("false");
+        }
+
+        document.write("<br>");
+        function first(){
+            document.write("This is a function");
+        }
+
+        first();
+
+        document.write("<br>");
+
+/*        function sum(a, b){
+            document.write(a + b);
+        }
+
+        sum(10, 30);                        */                                                                                         
+
+        function sum(a, b, c, d, e, f){
+            var total= a+b+c+d+e+f;
+
+            return total;
+        }
+
+        function per(tt){
+            var per=tt/600;
+
+            document.write(per);
+        }
+
+    var t= sum(80, 50, 60, 90, 40, 70);
+
+    per(t);
+
+    document.write("<br>");
+
+    var a=50;
+    document.write(a);
+
+    function hello(){
+        var s=60;
+        document.write(s);
+    }
+    document.write("<br>");
+    hello();
+
+    var a=0;
+    while(a<=10){
+        document.write("Number:" + a +"<br>");
+        a++;
+    }
+
+    document.write("<br>");
+
+/*    var a=0;
+    do{
+        document.write("Number:(" + a + "<br>");   
+        a++;
+    }while(a<=10)
+
+    document.write("<br>");                            */                            
+
+/*    var i=0;
+    for(i=0; i<=10; i++){
+    if(i=3){
+        document.write("Hey");
+        continue;
+    }
+        {
+        document.write("Number:(" + i + "<br>");
+    }
+    }                                                    */
+
+    for(var a=1; a<=5; a++){
+        for(var b=1; b<=a; b++){
+            document.write(b + " ");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>");
+
+    for(var a=1; a<=5; a++){
+        for(b=1; b<=a; b++){
+            document.write(a +" ");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>");
+
+    for(var a=5; a>=1; a--){
+        for(b=1; b<=a; b++){
+            document.write(a + " ");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>");
+
+    for(var a=5; a>=1; a--){
+        for(b=a; b>=1; b--){
+            document.write(b + " ");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>");
+
+    for(var a=5; a>=1; a--){
+        for(b=1; b<=a; b++){
+            document.write(b + " ");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>");
+
+    for(var a=1; a<=5; a++){
+        for(b=1; b<=5; b++){
+            document.write("*" + " ");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>");
+
+    var num=0;
+    for(a=1; a<=5; a++){
+        for(b=1; b<=a; b++){
+        num++;
+        document.write(num + " ");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>");
+
+    var ary=[10, 20, 30, 40, 50];
+    var sum=0;
+    var num;
+    document.write(ary);
+    console.log(ary);
+    console.table(ary);
+    for(var a=0; a<=4; a++){
+        ary[a];
+        document.write("<br>");
+        document.write(ary[a] + " ");
+    }
+        a=ary[0]+ary[1]+ary[2]+ary[3]+ary[4];
+        document.write("<br>");
+        sum=sum+a;                                                                                                 
+        document.write(sum);
+        document.write("<br>"); 
+        document.write(a + " <br> ");
+        console.log(typeof ary);
+
+        var ary;
+        var sum=0;
+        var a;
+        for(var g=0; g<3; g++){
+            document.write("<br>");
+            ary[g]=prompt("Enter the value:");
+            document.write(ary[g]);
+        }
+        document.write("<br>");
+        a=ary[0]+ary[1]+ary[2];
+        document.write(a);
+
+        var araay=[
+            ["Harry", "Male", 20, "B.Com"],
+            ["Sara", "Female", 22, "B.Tech"],
+            ["Girish", "Male", 26, "B.Sc"],
+            ["Karry", "Male", 18, "B.Com"]
+        ];
+        document.write("<br>");
+        document.write(araay + " <br> ");
+        document.write("<br>");
+        document.write(araay.length);
+
+        for(var a=0; a<=3; a++){
+            for(var b=0; b<=3; b++){
+                document.write(araay[a][b]  + " ");
+            }
+            document.write("<br>");
+        }
+
+        var arayy=["Harry", "Aman", "Yogesh", "Piyushes"];
+        document.write(arayy.length);
+        arayy[1]="Naresh";
+        document.write(arayy);
+        arayy.sort();
+        document.write(arayy);
+        arayy.reverse();
+        document.write(arayy);
+
+        document.write("<br>");
+
+        var araayy=["Harry", "Roshan", "Suresh", "Wriddhirun"];
+        document.write(araayy);
+
+        document.write("<br>");
+
+        araayy.pop();
+        document.write(araayy);
+
+        document.write("<br>");
+
+        araayy.push("Ishr", "Firos");
+        document.write(araayy);
+
+        document.write("<br>");
+
+        var arrayy=["Esl", "Ctes", "Xws", "Oht"];
+        document.write(arrayy);
+
+        document.write("<br>");
+
+        arrayy.shift();
+        document.write(arrayy);
+
+        document.write("<br>");
+
+        arrayy.unshift("Teo", "Kxf");
+        document.write(arrayy);
+
+        document.write("<br>");
+        
+        var arraay=["Qps", "Ftr", "Dit", "Epy"];
+        document.write(arraay);
+        document.write("<br>");
+/*        var b=arraay.slice(1, 3);
+        document.write(b);                            */                                                                                         
+        var c=arraay.splice(1,0,"Hitrus","Lrtip");
+        document.write(c);
+
+        var arraayy=["dls", "ctr", "psw", "sca"];
+        document.write(arraayy);
+        document.write("<br>");
+        var b=arraayy.concat("Hift", "Ties");
+        document.write(b);
+
+        document.write("<br>");
+
+        var aary=["Luos", "Kitd", "Cude", "Gstr"];
+        if(Array.isArray(aary)){
+            document.write("This is right");
+        }else{
+            document.write("This is false");
+        }
+
+        document.write("<br>");
+
+        var aarry=["Kurew", "Ptres", "Wiytr", "Fires"];
+        document.write(aarry);
+        document.write("<br>");
+        var b=aarry.indexOf("Ptres");
+        document.write(b);
+        document.write("<br>");
+        var c=aarry.lastIndexOf("Wiytr");
+        document.write(c);
+
+        document.write("<br>");
+
+        var arryy=["Hiyt", "Ktrt", "Lios", "Posf"];
+        document.write(arryy);
+        document.write("<br>");
+        var b=arryy.includes("Lios");
+        document.write(b);
+
+        document.write("<br>");
+
+        var ages=[10,30,20,50];
+        document.write(ages);
+        document.write("<br>");
+        var b=ages.some(CheckAdult);
+        document.write(b);
+        function CheckAdult(age){
+            return age>=18;
+        }
+        document.write("<br>"); 
+        var c=ages.every(CheckAdult);
+        document.write(c);
+        function CheckAdult(age){
+            return age>=18;
+        }
+
+        document.write("<br>");
+
+        var ages=[10,16,28,45];
+        document.write(ages);
+        document.write("<br>");
+        var b=ages.find(CheckAdult);
+        document.write(b);
+        function CheckAdult(age){
+            return age>=18;
+        }
+        document.write("<br>");
+        var c=ages.findIndex(CheckAdult);
+        document.write(c);
+        function CheckAdult(age){
+            return age>=18;
+        }
+
+        document.write("<br>");
+
+        var ages=[15,20,25,40];
+        document.write(ages);
+        document.write("<br>");
+        var b=ages.filter(CheckAdult);
+        document.write(b);
+        function CheckAdult(age){
+            return age>=18;
+        }
+
+        document.write("<br>");
+
+        var a=["Gorw", "Dptr", "Zist", "Csuy"];
+        document.write(a);
+        document.write("<br>");
+        a.toString();
+        document.write(a);
+        document.write("<br>");
+        a.valueOf();
+        document.write(a);
+        document.write("<br>");
+        a.fill("Ram");
+        document.write(a);
+
+        document.write("<br>");
+
+        var a=["Aior", "Gtre", "Iseo", "Klsw"];
+        document.write(a);
+        document.write("<br>");
+        a.forEach(function(value){
+            document.write(value);
+        })
+
+        document.write("<br>");
+
+        var person={
+            fname: "Lutr",
+            lname: "Dcw",
+            age: 26,
+            gender: "Male"
+        };
+        document.write(person);
+        document.write("<br>");
+        document.write(person.fname);
+        document.write("<br>");
+        document.write(person.lname);
+        document.write("<br>");
+        document.write(person.age);
+        document.write("<br>");
+        document.write(person.gender);
+        document.write("<br>");
+
+        var person=[
+            {
+                fname: "Frts",
+                lname: "zrte",
+                age: 34,
+                gender: "Male"
+            },
+        ];
+        document.write(person);
+        document.write("<br>");
+        console.log(person);
+        document.write(person[0]);
+        document.write("<br>");
+        document.write(person.fname);
+        document.write("<br>");
+        document.write(person[0].fname);
+        document.write("<br>");
+        document.write(person[0].lname);
+        document.write("<br>");
+        document.write(person[0].age);
+        document.write("<br>");
+        document.write(person[0].gender);
+        document.write("<br>");
+
+        var a={
+            fname: "Tfdes",
+            lname: "Csert",
+            age: 24,
+            gender: "Male",
+            salary: function(){
+                return 25000;
+            },
+            fullname: function(){
+                return this.fname + " " + this.lname;
+            },
+            livings:{
+                'City': "Noida",
+                'Cityy': "Gurgoan",
+            },
+        };
+        document.write(a.salary());
+        document.write("<br>");
+        document.write(a.fullname());
+        document.write("<br>");
+        document.write(a.livings.City);
+        document.write("<br>");
+        document.write(a.livings.Cityy);
+        document.write("<br>");
+
+        var person= new Object();
+        person.firstname="Dswr";
+        person.lastname="Kcde";
+        person.age=54;
+        document.write(person);
+        document.write("<br>");
+        document.write(person.firstname);
+        document.write("<br>");
+        document.write(person.lastname);
+        document.write("<br>");
+        document.write(person.age);
+        document.write("<br>");
+
+        var student= [
+            {name: "sedz", age:38},
+            {name: "fytr", age:42},
+            {name: "utcx", age:24},
+        ];
+        document.write(student);
+        document.write("<br>");
+        document.write(student.name);
+        document.write("<br>");
+        for(var a=0; a<student.length; a++){
+            document.write(student[a].name + " " + student[a].age + "<br>" );
+        }
+        document.write("<br>");
+
+        const s=20;
+/*        s=30;               */                                                                                                 
+/*        document.write(s);    */
+        const k= [10,20,30,40];
+        document.write(k);
+        document.write("<br>");
+        k[2]=80;
+        document.write(k);
+        document.write("<br>");
+
+        var person={
+            fname: "Htrs",
+            lname: "Cdse",
+            age: 40,
+            gender: "Mail",
+        };
+        for(var key in person){
+            document.write(person[key] + " " + "<br>");
+        }
+        document.write("<br>");
+
+        var ary=[10,20,30,40];
+        var b=ary.map(test);
+        document.write(b);
+        function test(x){
+            return x*10;
+        }
+        document.write("<br>");
+
+        var obj=[
+            { fname:"fesr", lname:"Kutsz",},
+            { fname:"trcs", lname:"utrs",},
+            { fname:"cser", lname:"fweq"}
+        ];
+        var b=obj.map(test);
+        document.write(b);
+        function test(x){
+            return x.fname;
+        }
+
+        document.write("<br>");
+
+        var str="This is a great crickter";
+        var t=str.length;
+        document.write(t);
+        console.log(str.toLowerCase());
+        console.log(str.toUpperCase());
+/*        var l=str.includes(This);             */                             
+/*        document.write(l);                 */                                                      
+        console.log(str.startsWith("this"));
+        console.log(str.endsWith("Crickter"));
+        console.log(str.search("is"));
+        console.log(str.match("crickter"));
+        console.log(str.indexOf("is"));
+        console.log(str.lastIndexOf("is"));
+        console.log(str.replace("This", "That"));
+        console.log(str.trim());
+        var l=str.trim();
+/*        alert(l);                                       */
+        console.log(str.charAt(2));
+/*        console.log(String.charCodeAt(2));          */                                 
+        console.log(String.fromCharCode(4));
+        console.log(str.concat( " " + "Dhoni"));
+        console.log(str.split(" "));
+        console.log(str.repeat(5));
+        console.log(str.slice(2, 13));
+        console.log(str.substr(2, 13));
+        console.log(str.substring(2,5));
+        console.log(str.toString());
+        console.log(str.valueOf());
+
+        var number=10.23;
+        console.log(Number(number));
+        console.log(Number.parseInt(number));
+        console.log(Number.parseFloat(number));
+        console.log(Number.isFinite(number));
+        console.log(Number.isInteger(number));
+        console.log(number.toFixed(2));
+        console.log(number.toPrecision(5));
+
+        console.log(Math.ceil(1.23));
+        console.log(Math.ceil(-1.23));
+        console.log(Math.floor(1.23));
+        console.log(Math.floor(-1.23));
+        console.log(Math.trunc(1.23));
+        console.log(Math.max(10,20,30,40));
+        console.log(Math.min(10,20,30,40));
+        console.log(Math.sqrt(64));
+        console.log(Math.cbrt(125));
+        console.log(Math.pow(2, 3));
+        console.log(Math.random());
+        console.log(Math.floor(Math.random * 10) + 1);
+        console.log(Math.abs(1.23));
+        console.log(Math.abs(-1.23));
+        console.log(Math.PI);
+
+        var date= new Date();
+        console.log(date);
+</script> 
+</body> 
